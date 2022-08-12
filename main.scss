@@ -1,0 +1,178 @@
+@use "./resets" as *;
+@use "./typographyandcolors" as *;
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.orange {
+  background: map-get($colors, "Bright-orange");
+  padding: 30px 60px 30px 50px;
+  height: 450px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  .first {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 60px;
+    }
+    h1 {
+      font-size: 40px;
+      color: map-get($colors, "Very-light-gray");
+      font-family: "Big Shoulders Display", cursive;
+      text-transform: uppercase;
+    }
+    p {
+      color: map-get($colors, "Transparent-white");
+      font-family: "Lexend Deca", sans-serif;
+      width: 210px;
+      line-height: 25px;
+      text-align: left;
+      align-self: center;
+      margin-bottom: 120px;
+    }
+    button {
+      padding: 15px 30px 15px 30px;
+      border: none;
+      background-color: map-get($colors, "Very-light-gray");
+      color: map-get($colors, "Bright-orange");
+      border-radius: 100px;
+      align-self: flex-start;
+      cursor: pointer;
+      font-family: "Lexend Deca", sans-serif;
+      transition: color 0.15s;
+    }
+    button:hover {
+      color: map-get($colors, "Very-light-gray");
+      background-color: map-get($colors, "Bright-orange");
+      border: solid;
+      border-color: map-get($colors, "Very-light-gray");
+    }
+  }
+}
+
+.teal {
+  background: map-get($colors, "Dark-cyan");
+  padding: 30px 60px 30px 50px;
+  height: 450px;
+  .second {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 60px;
+    }
+    h1 {
+      font-size: 40px;
+      color: map-get($colors, "Very-light-gray");
+      font-family: "Big Shoulders Display", cursive;
+      text-transform: uppercase;
+    }
+    p {
+      color: map-get($colors, "Transparent-white");
+      font-family: "Lexend Deca", sans-serif;
+      width: 210px;
+      line-height: 25px;
+      text-align: left;
+      align-self: center;
+      margin-bottom: 120px;
+    }
+    button {
+      padding: 15px 30px 15px 30px;
+      border: none;
+      background-color: map-get($colors, "Very-light-gray");
+      color: map-get($colors, "Dark-cyan");
+      border-radius: 100px;
+      align-self: flex-start;
+      cursor: pointer;
+      font-family: "Lexend Deca", sans-serif;
+    }
+    button:hover {
+      color: map-get($colors, "Very-light-gray");
+      background-color: map-get($colors, "Dark-cyan");
+      border: solid;
+      border-color: map-get($colors, "Very-light-gray");
+    }
+  }
+}
+.green {
+  background: map-get($colors, "Very-dark-cyan");
+  padding: 30px 60px 30px 50px;
+  height: 450px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  .third {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 60px;
+    }
+    h1 {
+      font-size: 40px;
+      color: map-get($colors, "Very-light-gray");
+      font-family: "Big Shoulders Display", cursive;
+      text-transform: uppercase;
+    }
+    p {
+      color: map-get($colors, "Transparent-white");
+      font-family: "Lexend Deca", sans-serif;
+      width: 200px;
+      line-height: 25px;
+      text-align: left;
+      align-self: center;
+      margin-bottom: 95px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 15px 30px 15px 30px;
+      border: none;
+      background-color: map-get($colors, "Very-light-gray");
+      color: map-get($colors, "Very-dark-cyan");
+      border-radius: 100px;
+      align-self: flex-start;
+      cursor: pointer;
+      font-family: "Lexend Deca", sans-serif;
+    }
+    button:hover {
+      color: map-get($colors, "Very-light-gray");
+      background-color: map-get($colors, "Very-dark-cyan");
+      border: solid;
+      border-color: map-get($colors, "Very-light-gray");
+    }
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+
+    .orange {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 0;
+    }
+    .green {
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 8px;
+      width: 210px;
+    }
+  }
+}

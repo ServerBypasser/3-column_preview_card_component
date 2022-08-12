@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+** ::before ::after {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+.attribution .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.orange {
+  background: hsl(31deg, 77%, 52%);
+  padding: 30px 60px 30px 50px;
+  height: 450px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.orange .first {
+  display: flex;
+  flex-direction: column;
+}
+.orange .first img {
+  width: 60px;
+}
+.orange .first h1 {
+  font-size: 40px;
+  color: hsl(0deg, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+}
+.orange .first p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  width: 210px;
+  line-height: 25px;
+  text-align: left;
+  align-self: center;
+  margin-bottom: 120px;
+}
+.orange .first button {
+  padding: 15px 30px 15px 30px;
+  border: none;
+  background-color: hsl(0deg, 0%, 95%);
+  color: hsl(31deg, 77%, 52%);
+  border-radius: 100px;
+  align-self: flex-start;
+  cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+  transition: color 0.15s;
+}
+.orange .first button:hover {
+  color: hsl(0deg, 0%, 95%);
+  background-color: hsl(31deg, 77%, 52%);
+  border: solid;
+  border-color: hsl(0deg, 0%, 95%);
+}
+
+.teal {
+  background: hsl(184deg, 100%, 22%);
+  padding: 30px 60px 30px 50px;
+  height: 450px;
+}
+.teal .second {
+  display: flex;
+  flex-direction: column;
+}
+.teal .second img {
+  width: 60px;
+}
+.teal .second h1 {
+  font-size: 40px;
+  color: hsl(0deg, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+}
+.teal .second p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  width: 210px;
+  line-height: 25px;
+  text-align: left;
+  align-self: center;
+  margin-bottom: 120px;
+}
+.teal .second button {
+  padding: 15px 30px 15px 30px;
+  border: none;
+  background-color: hsl(0deg, 0%, 95%);
+  color: hsl(184deg, 100%, 22%);
+  border-radius: 100px;
+  align-self: flex-start;
+  cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+}
+.teal .second button:hover {
+  color: hsl(0deg, 0%, 95%);
+  background-color: hsl(184deg, 100%, 22%);
+  border: solid;
+  border-color: hsl(0deg, 0%, 95%);
+}
+
+.green {
+  background: hsl(179deg, 100%, 13%);
+  padding: 30px 60px 30px 50px;
+  height: 450px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.green .third {
+  display: flex;
+  flex-direction: column;
+}
+.green .third img {
+  width: 60px;
+}
+.green .third h1 {
+  font-size: 40px;
+  color: hsl(0deg, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+}
+.green .third p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  width: 200px;
+  line-height: 25px;
+  text-align: left;
+  align-self: center;
+  margin-bottom: 95px;
+  font-size: 1rem;
+}
+.green .third button {
+  padding: 15px 30px 15px 30px;
+  border: none;
+  background-color: hsl(0deg, 0%, 95%);
+  color: hsl(179deg, 100%, 13%);
+  border-radius: 100px;
+  align-self: flex-start;
+  cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+}
+.green .third button:hover {
+  color: hsl(0deg, 0%, 95%);
+  background-color: hsl(179deg, 100%, 13%);
+  border: solid;
+  border-color: hsl(0deg, 0%, 95%);
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .orange {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+  .container .green {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+    width: 210px;
+  }
+}/*# sourceMappingURL=main.css.map */
